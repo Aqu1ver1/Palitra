@@ -33,6 +33,13 @@ function TextColor(text, color){
 
 function setRandomColor(){
   col.forEach((col) => {
+    col.addEventListener('click', function(){
+      if(locked.classList.contains('fa-lock'))return;
+      color = chroma.random()
+      col.style.background =  color;
+      text.textContent = color;
+      copyArr += color + ' ';
+    })
     const locked = col.querySelector('.fa-solid')
 
     if(locked.classList.contains('fa-lock'))return;
