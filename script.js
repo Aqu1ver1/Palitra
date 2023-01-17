@@ -32,7 +32,9 @@ function TextColor(text, color){
 
 function setRandomColor(){
   col.forEach((col) => {
-    col.addEventListener('click', function(){
+    col.addEventListener('click', function(event){
+      // if(event.target == ('fa-solid'))return;
+      if(event.target.classList.contains('fa-solid'))return;
       if(locked.classList.contains('fa-lock'))return;
       color = chroma.random()
       col.style.background =  color;
