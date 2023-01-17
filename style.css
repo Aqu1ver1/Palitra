@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  font-family: 'Times New Roman', Times, serif;
+}
+.wrapper{
+  height: 100%;
+  display: flex;
+}
+
+.section{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: lavender;
+}
+button{
+  color: #fff;
+  font-size: 24px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+button:hover{
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.text_cont{
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.text_cont:hover{
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.buttonByReload{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  width: 160px;
+  justify-content: flex-end;
+  padding-right: 40px;
+}
+
+.press{
+  font-size: 24px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.button__copy{
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  position: fixed;
+  bottom: 50px;
+  width: 100%;
+  justify-content: center;
+}
