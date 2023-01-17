@@ -24,7 +24,6 @@ copyAll.addEventListener('click', function(){
 //     color = hexCodes[Math.floor(Math.random * hexCodes.l)]
 //   }
 // }
-
 function TextColor(text, color){
   const luminance = chroma(color).luminance()
 
