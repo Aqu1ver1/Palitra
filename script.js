@@ -40,6 +40,9 @@ function setRandomColor(){
       col.style.background =  color;
       text.textContent = color;
       copyArr += color + ' ';
+      TextColor(press,color)
+      TextColor(text, color);    
+      TextColor(button, color);
     })
     const locked = col.querySelector('.fa-solid')
 
